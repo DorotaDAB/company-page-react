@@ -1,0 +1,116 @@
+#home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("https://picsum.photos/id/1056/1600/1200");
+    background-size: cover;
+    background-position: center;
+}
+
+.home-shadow {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly; 
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.home-text {
+    width: 90%;
+    padding: 5%;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.home-text h1 {
+    padding-bottom: 10%;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.home-text h2 {
+    padding-bottom: 10%;
+}
+
+.btn {
+    width: 165px;
+    height: 42px;
+    border: 3px solid #FFFFFF;
+    background: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 19px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn a {
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+    text-decoration: none;
+} 
+
+@media (min-width: 768px) {
+    .home-text {
+        width: 65%;
+        padding: 0%;
+        font-size: 17px;
+    }
+
+    .home-text h1 {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .btn {
+        font-size: 17px;
+        line-height: 20px;
+    } 
+
+    .btn a {
+        font-size: 16px;
+        line-height: 19px;
+    } 
+}
+
+@media (min-width: 996px) {
+    #home {
+        height: 100vh;
+    }
+
+    .home-text {
+        width: 60%;
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .home-text h1 {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .btn {
+        font-size: 18px;
+        line-height: 21px;
+        transition-duration: 1s;
+        transition-timing-function: linear;
+    }
+    
+    .btn:hover {
+        background: white;
+        color: black;
+    }
+
+    .btn:hover a {
+        color: black;
+   } 
+}

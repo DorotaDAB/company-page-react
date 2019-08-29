@@ -4,7 +4,6 @@ import Home from './Components/Home/Home';
 import About from './Components/About/About';
 import Offer from './Components/Offer/Offer';
 import Footer from './Components/Footer/Footer';
-
 import './App.css';
 
 function App() {

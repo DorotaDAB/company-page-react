@@ -1,0 +1,102 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-top: 5%;
+    background: #F1F1F1;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.about-header {
+    width: 100%;
+    margin-bottom: 5%;
+    text-align: center;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: bold;
+    color:#152D41;
+}
+
+.about h2 {
+    margin-bottom: 5%;
+    font-weight: bold;
+    color: #000000;
+}
+
+.employee {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.photo {
+    flex-shrink: 0;
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 7%;
+}
+
+@media (min-width: 768px) {
+    .about {
+        flex-direction: row;
+        font-size: 17px;
+        line-height: 20px;
+    }
+    
+    .about-header {
+        font-size: 34px;
+        line-height: 40px;
+        text-align: left;
+    }
+  
+    .employee {
+        flex-direction: row;
+    }
+    
+    .photo {
+        width: 195px;
+        height: 195px;
+    }
+    
+    .employee:nth-of-type(even) {
+        flex-direction: row;
+    }
+    
+    .employee:nth-of-type(even) .photo {
+        margin-right: 20px;
+    }
+    
+    .employee:nth-of-type(odd) {
+        flex-direction: row-reverse;
+        text-align: right;
+    }
+    
+    .employee:nth-of-type(odd) .photo {
+        margin-left: 20px;
+    }
+}
+  
+@media (min-width: 996px) {
+    .about {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .about-header {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .photo {
+        width: 200px;
+        height: 200px;
+    }
+}
